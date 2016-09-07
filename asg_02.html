@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="acadgild">
+	<head>
+		<title>Assignment 02</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+		<script>
+			var myapp = angular.module('acadgild', []);
+
+			myapp.controller('mycontroller', function($scope) {
+				$scope.fname = "Garima";
+				$scope.lname = "Agarwal";
+			});
+		</script>
+	</head>
+	<body ng-controller="mycontroller">
+		<table border="1">
+			<tr>
+				<td>First Name</td>
+				<td>Last Name </td>
+			</tr>
+			<tr>
+				<td> {{fname}}</td>
+				<td> {{lname}}</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
